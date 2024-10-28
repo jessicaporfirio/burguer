@@ -11,7 +11,6 @@ body {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
   height: 110px; /* Altura do cabeçalho */
-  background-color: #000; /* Cor de fundo do cabeçalho (opcional) */
   margin-bottom: 20px; /* Espaçamento inferior */
 }
 
@@ -35,7 +34,7 @@ body {
 /* Estilo dos cabeçalhos */
 h1 {
     text-align: center; /* Centraliza o título */
-    color: var(--foreground); /* Cor do texto do título, usando variável para manter a consistência */
+    color: rgb(255, 255, 255); /* Cor do texto do título, usando variável para manter a consistência */
     font-family: "Kaushan Script", cursive; /* Fonte personalizada */
     font-weight: 400; /* Peso da fonte */
     font-size: 50px; /* Tamanho da fonte */
@@ -213,7 +212,6 @@ footer#rodape img#bsl{
 
 /* Formulário */
 .form-card {
-    background-color: #E5A220; /* Cor de fundo do formulário */
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -241,4 +239,117 @@ footer#rodape img#bsl{
 
 .form-button:hover {
     background-color: #333; /* Cor do botão ao passar o mouse */
+}
+
+/*cadastro*/
+
+
+.form-container {
+    background-color: #1f1f1f; /* Cor de fundo do formulário */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Aumenta a largura do formulário */
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o formulário */
+    margin-top: 50px;
+}
+
+.form-container h1 {
+    color: #E5A220;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.text-center {
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.form-label {
+    font-weight: bold; /* Negrito para o rótulo */
+    color: #E5A220;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.w-100 {
+    width: 50%;
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 8px; /* Bordas arredondadas */
+    margin-bottom: 25px;
+}
+
+/* Estilizar os inputs para ficarem com a mesma largura */
+.form-control {
+    width: 93%; /* Largura total */
+    display: block; /* Certifique-se de que os controles sejam tratados como blocos */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+/* Estilizando o Form.Select para corresponder ao resto do formulário */
+.form-select {
+    width: 581px; /* Largura total */
+    display: block; /* Certifique-se de que o controle seja tratado como bloco */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 5px; /* Espaçamento inferior */
+    margin-top: 5px; /* Espaçamento superior */
+    background-color: #ffffff; /* Cor de fundo consistente */
+    color: #000000; /* Cor do texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*tabela de listagem*/
+/* Estilos para a tabela de pedidos */
+.custom-table {
+    width: 100%;
+    margin-top: 1rem;
+    background-color:#1f1f1f;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0);
+    border-collapse: collapse;
+
+}
+
+.custom-table thead {
+    background-color: #000000;
+    color: #E5A220;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.custom-table tbody tr:hover {
+    background-color: #52525293;
+
+}
+
+/* Estilos para ícones com hover */
+.hover-icon {
+    transition: color 0.3s ease;
+}
+
+.hover-icon:hover {
+    color: darkorange;
+}
+
+/* Estilos para a célula de ações */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
