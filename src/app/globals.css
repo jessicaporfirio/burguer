@@ -273,13 +273,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
 .w-100 {
     width: 50%;
-    color: #fff; /* Cor do texto do botão */
+    color: #ffffff; /* Cor do texto do botão */
     border: none;
     padding: 0.75rem;
     margin-top: 1rem;
     border-radius: 8px; /* Bordas arredondadas */
     margin-bottom: 25px;
 }
+
 
 /* Estilizar os inputs para ficarem com a mesma largura */
 .form-control {
@@ -341,15 +342,37 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 /* Estilos para ícones com hover */
 .hover-icon {
     transition: color 0.3s ease;
+    color: #ffffff;
 }
 
 .hover-icon:hover {
-    color: darkorange;
+    color: #E5A220;
 }
 
 /* Estilos para a célula de ações */
 .actions {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    background-color: #000000;
+}
+
+/*botões 'novo' */
+
+.btn-primary.mb-3 {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #E5A220;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-primary.mb-3:hover {
+
+    background-color: #52525293;
+    border-color: #52525293;
 }

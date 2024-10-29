@@ -33,6 +33,7 @@ export default function Pedidos() {
                 <header id="cabecalho">
                     <h1 className="mb-4">Pedidos</h1>
                 </header>
+               
                 <Link href="/pedidos/form" className="btn btn-primary mb-3">
                     <FaPlusCircle /> Novo
                 </Link>

@@ -2,10 +2,11 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 import { FaPlusCircle, FaRegEdit } from 'react-icons/fa';
 import { MdDelete } from 'react-icons/md';
 import StarRatings from 'react-star-ratings'; // Importando o componente de estrelas
+
 
 export default function Avaliacoes() {
     const [avaliacoes, setAvaliacoes] = useState([]);
@@ -34,9 +35,12 @@ export default function Avaliacoes() {
                 <header id="cabecalho">
                     <h1 className="mb-4">Avaliações</h1>
                 </header>
-                <Link href="/avaliacoes/form" className="btn btn-primary mb-3">
-                    <FaPlusCircle /> Novo
+                <Link href="/avaliacoes/form" passHref legacyBehavior>
+                    <Button variant="primary" className="mb-3">
+                        <FaPlusCircle /> Novo
+                    </Button>
                 </Link>
+
 
                 <Table className="custom-table">
                     <thead>
@@ -75,6 +79,7 @@ export default function Avaliacoes() {
                                 </td>
                                 <td>{item.comentario}</td>
                             </tr>
+
                         ))}
                     </tbody>
                 </Table>

@@ -92,7 +92,7 @@ export default function Page({ params }) {
                             </Form.Group>
 
                             <div className="text-center">
-                                <Button type="submit" variant="success" className="w-100">
+                                <Button type="submit" variant="success" className="w-100" style={{color:'black'}}>
                                     <FaCheck /> Salvar
                                 </Button>
                             </div>
